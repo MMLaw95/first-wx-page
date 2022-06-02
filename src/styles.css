@@ -1,0 +1,218 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/636/original/texas.png?1650820813");
+  background-position: center 40px;
+  background-repeat: no-repeat;
+  background-size: 1150px 700px;
+  background-color: white;
+}
+
+.weather-app {
+  padding: 15px;
+  margin: 20px auto;
+  max-width: auto;
+}
+
+.search-bar {
+  width: 1142px;
+  margin-left: 51.5px;
+  margin-top: -27px;
+}
+
+ul.texas-cities {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  font-weight: 500;
+  list-style-type: none;
+  margin-right: -62px;
+  margin-top: 16px;
+  margin-left: 67px;
+  padding: 1px 13px 19px 0px;
+  gap: 17px;
+  text-shadow: -1px 1px 0 #052665, 1px 1px 0 #052665, 1px -1px 0 #052665,
+    -1px -1px 0 #052665;
+}
+
+.city-color {
+  color: white;
+}
+
+.city-color:hover {
+  color: #b90c2f;
+}
+
+#city-search {
+  width: 278.5px;
+  margin-left: 14px;
+}
+
+#press-one {
+  background-color: #b90c2f;
+  color: white;
+  width: 85.8281px;
+  margin-left: 297px;
+  margin-top: -65px;
+  transition: all 0.2s ease-in-out;
+}
+
+#press-one:hover {
+  background-color: #a00928;
+  outline-color: white;
+  color: white;
+}
+
+#press-one:visited {
+  background-color: #b90c2f;
+  outline-color: white;
+  color: white;
+}
+
+#press-one:link {
+  background-color: #b90c2f;
+  outline-color: white;
+  color: white;
+}
+
+#press-one:active {
+  background-color: #b90c2f;
+  outline-color: white;
+  color: white;
+}
+
+#star-city {
+  display: block;
+  font-size: 33px;
+  text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff,
+    -1px -1px 0 #fff;
+  text-align: center;
+  margin-top: 212px;
+  margin-left: 96.3px;
+  text-transform: capitalize;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#current-temp {
+  font-size: 136px;
+  font-weight: 600;
+  line-height: 0.8;
+}
+
+.current-focus-details {
+  display: block;
+  text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff,
+    -1px -1px 0 #fff;
+  margin-top: -41px;
+  margin-left: 155px;
+  width: 229px;
+}
+
+.current-details {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+#units {
+  font-weight: 500;
+  top: -83px;
+  font-size: larger;
+  position: relative;
+}
+
+#units:hover {
+  color: #052665;
+}
+
+#fahrenheit-link {
+  color: #b90c2f;
+  transition: all 0.2s ease-in-out;
+}
+
+#fahrenheit-link:hover {
+  color: #052665;
+}
+
+#celsius-link {
+  color: #b90c2f;
+  transition: all 0.2s ease-in-out;
+}
+
+#celsius-link:hover {
+  color: #052665;
+}
+
+#press-two {
+  background-color: #052665;
+  color: white;
+  margin-top: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+#press-two:hover {
+  background-color: #052665;
+  outline-color: #b90c2f;
+  color: white;
+}
+
+.current-emoji {
+  font-size: 210px;
+  display: block;
+  line-height: 0.8;
+  margin-top: -24px;
+  margin-left: 4px;
+}
+
+#bottom {
+  margin-left: 200px;
+}
+
+#group-days {
+  margin-top: 103px;
+  position: relative;
+  left: -78.5px;
+}
+
+#day-week {
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+#emoji-week {
+  line-height: 1.25;
+  text-align: center;
+  font-size: large;
+}
+
+#high-low-week {
+  font-size: 14px;
+  line-height: 1;
+  color: #6c757d;
+  text-align: center;
+}
+
+.highs {
+  font-weight: bolder;
+}
+
+.footer {
+  position: fixed;
+  margin: 10px;
+  padding: 5px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1x 2x #fff;
+}
+
+#mailColor {
+  color: #b90c2f;
+}
