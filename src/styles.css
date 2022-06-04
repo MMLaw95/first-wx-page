@@ -13,7 +13,7 @@ body {
 .weather-app {
   padding: 15px;
   margin: 20px auto;
-  max-width: auto;
+  /* max-width: auto; */
 }
 
 .search-bar {
