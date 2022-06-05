@@ -51,7 +51,7 @@ function displayWeatherCondition(response) {
     response.data.wind.speed
   );
   document.querySelector("#weather-description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
   document.querySelector("#sun-high-weekday").innerHTML = Math.round(
     response.data.main.temp_max
   );
