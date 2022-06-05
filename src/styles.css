@@ -183,12 +183,16 @@ a:link {
   font-size: large;
   font-weight: 500;
   line-height: 1.25;
+  margin: 0px;
+  padding: 9px;
 }
 
 #emoji-week {
   line-height: 1.25;
   text-align: center;
   font-size: large;
+  margin: 0px;
+  padding: 9px;
 }
 
 #high-low-week {
@@ -196,6 +200,8 @@ a:link {
   line-height: 1;
   color: #6c757d;
   text-align: center;
+  margin: 0px;
+  padding: 9px;
 }
 
 .highs {
