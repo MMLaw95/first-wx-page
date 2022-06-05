@@ -119,6 +119,10 @@ a:link {
   line-height: 1.25;
 }
 
+#weather-description {
+  text-transform: capitalize;
+}
+
 #units {
   font-weight: 500;
   top: -83px;
