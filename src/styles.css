@@ -148,6 +148,14 @@ ul.current-details {
   color: #052665;
 }
 
+.weather-temperature a {
+  color: #b90c2f;
+}
+
+.weather-temperature a:hover {
+  color: #052665;
+}
+
 /* .weather-temperature .active:hover {
   
   color: #052665;
