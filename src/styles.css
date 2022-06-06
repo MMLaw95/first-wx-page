@@ -109,48 +109,67 @@ a:link {
   display: block;
   text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff,
     -1px -1px 0 #fff;
-  margin-top: -41px;
+  margin-top: -48px;
   margin-left: 155px;
   width: 229px;
 }
 
-.current-details {
+ul.current-details {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 1.25;
+  text-align: justify;
 }
 
 #weather-description {
   text-transform: capitalize;
 }
 
-#units {
+.weather-temperature #units {
   font-weight: 500;
   top: -83px;
   font-size: larger;
   position: relative;
 }
 
-#units:hover {
+.weather-temperature .link {
+  color: #b90c2f;
+}
+
+.weather-temperature .active {
+  cursor: default;
   color: #052665;
 }
 
-#fahrenheit-link {
+.weather-temperature .active:hover {
+  cursor: default;
+  color: #052665;
+  text-decoration: none;
+}
+
+/* #units {
+  color: #b90c2f;
+} */
+
+/* #fahrenheit-link {
   color: #b90c2f;
   transition: all 0.2s ease-in-out;
-}
+} */
 
-#fahrenheit-link:hover {
+/* #fahrenheit-link:hover {
   color: #052665;
-}
+} */
 
-#celsius-link {
+/* #celsius-link {
   color: #b90c2f;
   transition: all 0.2s ease-in-out;
-}
+} */
 
-#celsius-link:hover {
+/* #celsius-link:hover {
   color: #052665;
-}
+} */
 
 #press-two {
   background-color: #052665;
@@ -165,12 +184,9 @@ a:link {
   color: white;
 }
 
-.current-emoji {
-  font-size: 210px;
-  display: block;
-  line-height: 0.8;
-  margin-top: -24px;
-  margin-left: 4px;
+#current-emoji {
+  margin-top: -111px;
+  margin-left: -41px;
 }
 
 #bottom {
@@ -180,7 +196,7 @@ a:link {
 #group-days {
   margin-top: 103px;
   position: relative;
-  left: -78px;
+  left: -59px;
 }
 
 #day-week {

@@ -70,47 +70,53 @@
 
           <div class="col-sm-4">
             <div class="current-focus-details">
-              <div class="clearfix">
+              <div class="clearfix weather-temperature">
                 <div class="float-right">
                   <span id="current-temp"></span>
                   <span id="units"
-                    ><a href="#" id="fahrenheit-link">°F</a> |<a
+                    ><a href="#" id="fahrenheit-link" class="active">°F</a> |<a
                       href="#"
                       id="celsius-link"
                       >°C</a
                     ></span
                   >
-                  <div class="current-details">
-                    <span id="current-day-date-time"></span>
-                  </div>
-                  <div class="current-details">
-                    Feels Like: <span id="feels-like-temp"></span>°
-                  </div>
-                  <div class="current-details">
-                    Humidity: <span id="humidity"></span>%
-                  </div>
-                  <div class="current-details">
-                    Wind: <span id="wind-speed"></span> mph
-                  </div>
-                  <div class="current-details">
-                    <span id="weather-description"></span>
-                  </div>
-                  <div class="current-details">
-                    <button class="btn btn-light" id="press-two" type="click">
-                      Current Location
-                    </button>
-                  </div>
+                  <ul class="current-details">
+                    <li>
+                      <span id="current-day-date-time"></span>
+                    </li>
+                    <li>
+                      Feels Like: <span id="feels-like-temp"></span>°
+                    </li>
+                    <li>
+                      Humidity: <span id="humidity"></span>%
+                    </li>
+                    <li>
+                      Wind: <span id="wind-speed"></span> mph
+                    </li>
+                    <li>
+                      <span id="weather-description"></span>
+                    </li>
+                    <li>
+                      <button class="btn btn-light" id="press-two" type="click">
+                        Current Location
+                      </button>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="col-sm-4">
-            <div class="float-right">
-              <div class="current-emoji">☀️</div>
+                  <img
+                    src=""
+                    alt="Clear"
+                    id="current-emoji"
+                    class="float-left"
+                    width="300"
+                  />
             </div>
-          </div>
-        </div>
+                  
 
         <div class="row justify-content-end">
           <div class="col-sm-1" id="group-days">
@@ -124,10 +130,9 @@
               <li
                 class="list-group-item"
                 style="border: none"
-                id="high-low-week"
-              >
-                <span class="highs" id="sun-high-weekday"></span>°
-                <span id="sun-low-weekday"></span>°
+                id="high-low-week">
+                <span class="highs" id="high-weekday"></span>°
+                <span id="low-weekday"></span>°
               </li>
             </ul>
           </div>
@@ -143,10 +148,9 @@
               <li
                 class="list-group-item"
                 style="border: none"
-                id="high-low-week"
-              >
-                <span class="highs" id="mon-high-weekday"></span>°
-                <span id="mon-low-weekday"></span>°
+                id="high-low-week">
+                <span class="highs" id="high-weekday"></span>°
+                <span id="low-weekday"></span>°
               </li>
             </ul>
           </div>
@@ -162,10 +166,9 @@
               <li
                 class="list-group-item"
                 style="border: none"
-                id="high-low-week"
-              >
-                <span class="highs" id="tue-high-weekday"></span>°
-                <span id="tue-low-weekday"></span>°
+                id="high-low-week">
+                <span class="highs" id="high-weekday"></span>°
+                <span id="low-weekday"></span>°
               </li>
             </ul>
           </div>
@@ -181,10 +184,9 @@
               <li
                 class="list-group-item"
                 style="border: none"
-                id="high-low-week"
-              >
-                <span class="highs" id="wed-high-weekday"></span>°
-                <span id="wed-low-weekday"></span>°
+                id="high-low-week">
+                <span class="highs" id="high-weekday"></span>°
+                <span id="low-weekday"></span>°
               </li>
             </ul>
           </div>
@@ -200,10 +202,9 @@
               <li
                 class="list-group-item"
                 style="border: none"
-                id="high-low-week"
-              >
-                <span class="highs" id="thu-high-weekday"></span>°
-                <span id="thu-low-weekday"></span>°
+                id="high-low-week">
+                <span class="highs" id="high-weekday"></span>°
+                <span id="low-weekday"></span>°
               </li>
             </ul>
           </div>
@@ -219,10 +220,9 @@
               <li
                 class="list-group-item"
                 style="border: none"
-                id="high-low-week"
-              >
-                <span class="highs" id="fri-high-weekday"></span>°
-                <span id="fri-low-weekday"></span>°
+                id="high-low-week">
+                <span class="highs" id="high-weekday"></span>°
+                <span id="low-weekday"></span>°
               </li>
             </ul>
           </div>
@@ -238,10 +238,9 @@
               <li
                 class="list-group-item"
                 style="border: none"
-                id="high-low-week"
-              >
-                <span class="highs" id="sat-high-weekday"></span>°
-                <span id="sat-low-weekday"></span>°
+                id="high-low-week">
+                <span class="highs" id="high-weekday"></span>°
+                <span id="low-weekday"></span>°
               </li>
             </ul>
           </div>
@@ -254,13 +253,12 @@
             >
             Made in Texas by
             <a href="mailto:mlawry95@gmail.com" id="mailColor"
-              >M.M. Lawry</a
-            ></small
-          >
+              >M.M. Lawry</a>
+            </small>
         </div>
       </div>
     </div>
 
-    <script src="src/index.js"></script>
+    <script src="src/app.js"></script>
   </body>
 </html>
