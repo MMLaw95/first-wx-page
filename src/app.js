@@ -35,28 +35,31 @@ function formatDate(timestamp) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Tue", "Wed", "Thu"];
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon"];
 
   let forecastHTML = `<div class="row justify-content-end">`;
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
       `
-  
-              <div class="col-sm-1">            
-                  <ul class="list-group list-group-flush p-0">    
+            <div class="col-sm-1">            
+                  <ul class="list-group list-group-flush p-0" id="group-days">    
                     <li class="list-group-item" style="border: none" id="day-week">
                     <span class="weather-forecast-day">${day}</span>
                     </li>
                     <li class="list-group-item" style="border: none" id="emoji-week">
-                    <img src"http://openweathermap.org/img/wn/50d@2x.png"
+                     <img
+          src="http://openweathermap.org/img/wn/50d@2x.png"
+          alt=""
+          width="42"
+        />
                     </li>
                     <li
                     class="list-group-item"
                     style="border: none"
                     id="high-low-week">
-                    <span class="highs" id="high-weekday"></span>95°
-                    <span id="low-weekday"></span>84°
+                    <span class="highs" id="high-weekday">95° </span>
+                    <span id="low-weekday">84°</span>
                     </li>
                   </ul>           
             </div>`;
