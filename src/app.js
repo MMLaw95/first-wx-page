@@ -32,42 +32,48 @@ function formatDate(timestamp) {
   return `${day} ${month} ${number} ${year} ${hours}:${minutes}`;
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  let forecast = response.data.daily);
+
   let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon"];
-
   let forecastHTML = `<div class="row justify-content-end">`;
-  days.forEach(function (day) {
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
-            <div class="col-sm-1">            
-                  <ul class="list-group list-group-flush p-0" id="group-days">    
-                    <li class="list-group-item" style="border: none" id="day-week">
-                    <span class="weather-forecast-day">${day}</span>
-                    </li>
-                    <li class="list-group-item" style="border: none" id="emoji-week">
-                     <img
-          src="http://openweathermap.org/img/wn/50d@2x.png"
-          alt=""
-          width="42"
-        />
-                    </li>
-                    <li
-                    class="list-group-item"
-                    style="border: none"
-                    id="high-low-week">
-                    <span class="highs" id="high-weekday">95° </span>
-                    <span id="low-weekday">84°</span>
-                    </li>
-                  </ul>           
-            </div>`;
+      <div class="col-sm-1">
+        <ul class="list-group list-group-flush p-0" id="group-days">
+          <li class="list-group-item" style="border: none" id="day-week">
+          <span class="weather-forecast-day">${forecastDay.dt}</span>
+          </li>
+          <li class="list-group-item" style="border: none" id="emoji-week">
+            <img
+              src="http://openweathermap.org/img/wn/50d@2x.png"
+              alt=""
+              width="42"
+              />
+          </li>
+          <li
+              class="list-group-item"
+              style="border: none"
+              id="high-low-week">
+              <span class="highs" id="high-weekday">95° </span>
+              <span id="low-weekday">84°</span>
+          </li>
+        </ul>
+      </div>`;
   });
 
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
-  console.log(forecastHTML);
+}
+
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "a4291214a1e333b12b6de7b256df44ea";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function displayWeatherConditions(response) {
@@ -96,6 +102,9 @@ function displayWeatherConditions(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  getForecast(response.data.coord);
+
   // minElement.innerHTML = Math.round(response.data.main.temp_min);
   // maxElement.innerHTML = Math.round(response.data.main.temp_max);
 }
@@ -236,5 +245,3 @@ function lookUpSanAntonio(event) {
 clickSanAntonio.addEventListener("click", lookUpSanAntonio);
 
 search("Austin");
-
-displayForecast();
