@@ -43,16 +43,14 @@ function displayForecast() {
       forecastHTML +
       `
   
-              <div class="col-sm-1" id="group-days">            
-                <div class="weather-forecast-day">
+              <div class="col-sm-1">            
                   <ul class="list-group list-group-flush p-0">    
                     <li class="list-group-item" style="border: none" id="day-week">
-                    ${day}
-                    </li></div>
+                    <span class="weather-forecast-day">${day}</span>
+                    </li>
                     <li class="list-group-item" style="border: none" id="emoji-week">
                     <i class="fa-solid fa-sun wx-icon"></i>
                     </li>
-                <div class="weather-forecast-temp">
                     <li
                     class="list-group-item"
                     style="border: none"
@@ -60,8 +58,7 @@ function displayForecast() {
                     <span class="highs" id="high-weekday"></span>95°
                     <span id="low-weekday"></span>84°
                     </li>
-                  </ul>
-              </div>            
+                  </ul>           
             </div>`;
   });
 
