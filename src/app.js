@@ -44,7 +44,7 @@ function displayWeatherConditions(response) {
   let minElement = document.querySelector("#low-weekday");
   let maxElement = document.querySelector("#high-weekday");
 
-  celsiusTemp = response.data.main.temp;
+  fahrenheitTemp = response.data.main.temp;
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
