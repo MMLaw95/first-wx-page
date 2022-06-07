@@ -32,24 +32,35 @@ function formatDate(timestamp) {
   return `${day} ${month} ${number} ${year} ${hours}:${minutes}`;
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function displayForecast(response) {
-  let forecast = response.data.daily);
+  let forecast = response.data.daily;
 
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row justify-content-end">`;
-  forecast.forEach(function (forecastDay) {
-    forecastHTML =
-      forecastHTML +
-      `
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 7) {
+      forecastHTML =
+        forecastHTML +
+        `
       <div class="col-sm-1">
         <ul class="list-group list-group-flush p-0" id="group-days">
           <li class="list-group-item" style="border: none" id="day-week">
-          <span class="weather-forecast-day">${forecastDay.dt}</span>
+          <span class="weather-forecast-day">${formatDay(forecastDay.dt)}</span>
           </li>
           <li class="list-group-item" style="border: none" id="emoji-week">
             <img
-              src="http://openweathermap.org/img/wn/50d@2x.png"
+              src="http://openweathermap.org/img/wn/${
+                forecastDay.weather[0].icon
+              }@2x.png"
               alt=""
               width="42"
               />
@@ -58,11 +69,16 @@ function displayForecast(response) {
               class="list-group-item"
               style="border: none"
               id="high-low-week">
-              <span class="highs" id="high-weekday">95° </span>
-              <span id="low-weekday">84°</span>
+              <span class="highs" id="high-weekday">${Math.round(
+                forecastDay.temp.max
+              )}° </span>
+              <span class="highs" id="high-weekday">${Math.round(
+                forecastDay.temp.min
+              )}° </span>
           </li>
         </ul>
       </div>`;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
