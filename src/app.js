@@ -32,6 +32,44 @@ function formatDate(timestamp) {
   return `${day} ${month} ${number} ${year} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Tue", "Wed", "Thu"];
+
+  let forecastHTML = `<div class="row justify-content-end">`;  
+  days.foreEach(function (day) {    
+
+  forecastHTML = forecastHTML + `
+  
+              <div class="col-sm-1" id="group-days">            
+                <div class="weather-forecast-day">
+                  <ul class="list-group list-group-flush p-0">    
+                    <li class="list-group-item" style="border: none" id="day-week">
+                    ${day}
+                    </li></div>
+                    <li class="list-group-item" style="border: none" id="emoji-week">
+                    <i class="fa-solid fa-sun wx-icon"></i>
+                    </li>
+                <div class="weather-forecast-temp">
+                    <li
+                    class="list-group-item"
+                    style="border: none"
+                    id="high-low-week">
+                    <span class="highs" id="high-weekday"></span>95°
+                    <span id="low-weekday"></span>84°
+                    </li>
+                  </ul>
+              </div>            
+            </div>`;
+    });
+
+    forecastHTML = forecastHTML + `</div>`;
+    forecastHTML.innerHTML = forecastHTML;
+    console.log(forecastHTML);
+  }
+
+
 function displayWeatherConditions(response) {
   let temperatureElement = document.querySelector("#current-temp");
   let cityElement = document.querySelector("#star-city");
@@ -41,8 +79,8 @@ function displayWeatherConditions(response) {
   let dateElement = document.querySelector("#current-day-date-time");
   let iconElement = document.querySelector("#current-emoji");
   let feelsElement = document.querySelector("#feels-like-temp");
-  let minElement = document.querySelector("#low-weekday");
-  let maxElement = document.querySelector("#high-weekday");
+  // let minElement = document.querySelector("#low-weekday");
+  // let maxElement = document.querySelector("#high-weekday");
 
   fahrenheitTemp = response.data.main.temp;
 
@@ -198,3 +236,5 @@ function lookUpSanAntonio(event) {
 clickSanAntonio.addEventListener("click", lookUpSanAntonio);
 
 search("Austin");
+
+displayForecast(),
