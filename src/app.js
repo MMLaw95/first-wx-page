@@ -58,8 +58,8 @@ function displayWeatherConditions(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-  minElement.innerHTML = Math.round(response.data.main.temp_min);
-  maxElement.innerHTML = Math.round(response.data.main.temp_max);
+  // minElement.innerHTML = Math.round(response.data.main.temp_min);
+  // maxElement.innerHTML = Math.round(response.data.main.temp_max);
 }
 
 function search(city) {
