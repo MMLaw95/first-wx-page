@@ -38,7 +38,7 @@ function displayForecast() {
   let days = ["Tue", "Wed", "Thu"];
 
   let forecastHTML = `<div class="row justify-content-end">`;
-  days.foreEach(function (day) {
+  days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
       `
@@ -49,7 +49,7 @@ function displayForecast() {
                     <span class="weather-forecast-day">${day}</span>
                     </li>
                     <li class="list-group-item" style="border: none" id="emoji-week">
-                    <i class="fa-solid fa-sun wx-icon"></i>
+                    <img src"http://openweathermap.org/img/wn/50d@2x.png"
                     </li>
                     <li
                     class="list-group-item"
