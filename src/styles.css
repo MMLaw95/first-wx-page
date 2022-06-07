@@ -6,21 +6,14 @@ body {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/636/original/texas.png?1650820813");
   background-position: center 40px;
   background-repeat: no-repeat;
-  background-size: 1150px 700px;
-  background-color: white;
+  background-size: 900px 575px;
+  background-color: #dee2e6;
   overflow-x: hidden;
 }
 
 .weather-app {
   padding: 15px;
   margin: 20px auto;
-  /* max-width: auto; */
-}
-
-.search-bar {
-  width: 1142px;
-  margin-left: 51.5px;
-  margin-top: -27px;
 }
 
 ul.texas-cities {
@@ -30,12 +23,13 @@ ul.texas-cities {
   font-weight: 500;
   list-style-type: none;
   margin-right: -62px;
-  margin-top: 16px;
-  margin-left: 67px;
+  margin-top: 14px;
+  margin-left: 186px;
   padding: 1px 13px 19px 0px;
-  gap: 17px;
+  gap: 7px;
   text-shadow: -1px 1px 0 #052665, 1px 1px 0 #052665, 1px -1px 0 #052665,
     -1px -1px 0 #052665;
+  font-size: 14px;
 }
 
 .city-color {
@@ -46,18 +40,27 @@ ul.texas-cities {
   color: #b90c2f;
 }
 
+.search-bar {
+  width: 1015px;
+  margin-left: 170.5px;
+  margin-top: -29px;
+}
+
 #city-search {
-  width: 278.5px;
-  margin-left: 14px;
+  width: 219.5px;
+  margin-left: 16px;
+  height: 32px;
+  font-size: 14px;
 }
 
 #press-one {
   background-color: #b90c2f;
   color: white;
-  width: 85.8281px;
-  margin-left: 297px;
-  margin-top: -65px;
+  width: 70.8281px;
+  margin-left: 239px;
+  margin-top: -60px;
   transition: all 0.2s ease-in-out;
+  font-size: 14px;
 }
 
 #press-one:hover {
@@ -86,12 +89,12 @@ ul.texas-cities {
 
 #star-city {
   display: block;
-  font-size: 33px;
+  font-size: 27px;
   text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff,
     -1px -1px 0 #fff;
   text-align: center;
-  margin-top: 212px;
-  margin-left: 96.3px;
+  margin-top: 166px;
+  margin-left: 263.3px;
   text-transform: capitalize;
 }
 
@@ -100,7 +103,7 @@ a:link {
 }
 
 #current-temp {
-  font-size: 136px;
+  font-size: 95px;
   font-weight: 600;
   line-height: 0.8;
 }
@@ -109,8 +112,8 @@ a:link {
   display: block;
   text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff,
     -1px -1px 0 #fff;
-  margin-top: -48px;
-  margin-left: 155px;
+  margin-top: -39px;
+  margin-left: 175px;
   width: 229px;
 }
 
@@ -118,7 +121,7 @@ ul.current-details {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.25;
   text-align: justify;
 }
@@ -130,8 +133,7 @@ ul.current-details {
 .weather-temperature #units {
   cursor: default;
   font-weight: 500;
-  top: -83px;
-  font-size: larger;
+  top: -53px;
   position: relative;
 }
 
@@ -160,6 +162,7 @@ ul.current-details {
 
 #press-two {
   background-color: #052665;
+  font-size: 13px;
   color: white;
   margin-top: 5px;
   transition: all 0.2s ease-in-out;
@@ -172,8 +175,8 @@ ul.current-details {
 }
 
 #current-emoji {
-  margin-top: -111px;
-  margin-left: -41px;
+  margin-top: -92px;
+  margin-left: -81px;
 }
 
 #bottom {
@@ -181,9 +184,9 @@ ul.current-details {
 }
 
 #group-days {
-  margin-top: 94px;
+  margin-top: 68px;
   position: relative;
-  left: -78px;
+  left: -226px;
 }
 
 #day-week {
@@ -213,6 +216,10 @@ ul.current-details {
 
 .highs {
   font-weight: bolder;
+}
+
+.lows {
+  opacity: 0.8;
 }
 
 .footer {

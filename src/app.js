@@ -47,7 +47,7 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row justify-content-end">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 7) {
+    if (index < 5) {
       forecastHTML =
         forecastHTML +
         `
@@ -72,7 +72,7 @@ function displayForecast(response) {
               <span class="highs" id="high-weekday">${Math.round(
                 forecastDay.temp.max
               )}° </span>
-              <span class="highs" id="high-weekday">${Math.round(
+              <span class="lows" id="low-weekday">${Math.round(
                 forecastDay.temp.min
               )}° </span>
           </li>
@@ -86,7 +86,6 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "a4291214a1e333b12b6de7b256df44ea";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
@@ -101,8 +100,6 @@ function displayWeatherConditions(response) {
   let dateElement = document.querySelector("#current-day-date-time");
   let iconElement = document.querySelector("#current-emoji");
   let feelsElement = document.querySelector("#feels-like-temp");
-  // let minElement = document.querySelector("#low-weekday");
-  // let maxElement = document.querySelector("#high-weekday");
 
   fahrenheitTemp = response.data.main.temp;
 
@@ -120,9 +117,6 @@ function displayWeatherConditions(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   getForecast(response.data.coord);
-
-  // minElement.innerHTML = Math.round(response.data.main.temp_min);
-  // maxElement.innerHTML = Math.round(response.data.main.temp_max);
 }
 
 function search(city) {
@@ -162,7 +156,6 @@ function showCelsius(event) {
 
 function showFahrenheit(event) {
   event.preventDefault();
-  // let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
   clickCelsius.classList.remove("active");
   clickFahrenheit.classList.add("active");
   let temperatureElement = document.querySelector("#current-temp");
