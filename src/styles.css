@@ -135,14 +135,6 @@ ul.current-details {
   position: relative;
 }
 
-/* #units:link {
-  color: #b90c2f;
-} */
-
-/* .weather-temperature #units:link {
-  color: #b90c2f;
-} */
-
 .weather-temperature .active {
   cursor: default;
   color: #052665;
@@ -156,53 +148,15 @@ ul.current-details {
   color: #052665;
 }
 
-/* .weather-temperature .active:hover {
-  
-  color: #052665;
-  text-decoration: none;
-} */
-
-/* #units {
-  color: #b90c2f;
-} */
-
-/* #fahrenheit-link {
-  color: #b90c2f;
-  transition: all 0.2s ease-in-out;
-} */
-
-/* #fahrenheit-link:active {
-  color: #052665;
-  transition: all 0.2s ease-in-out;
-} */
-
 #fahrenheit-link:inactive {
   color: #b90c2f;
   transition: all 0.2s ease-in-out;
 }
 
-/* #celsius-link:active {
-  color: #052665;
-  transition: all 0.2s ease-in-out;
-} */
-
 #celsius-link:inactive {
   color: #b90c2f;
   transition: all 0.2s ease-in-out;
 }
-
-/* #fahrenheit-link:hover {
-  color: #052665;
-} */
-
-/* #celsius-link {
-  color: #b90c2f;
-  transition: all 0.2s ease-in-out;
-} */
-
-/* #celsius-link:hover {
-  color: #052665;
-} */
 
 #press-two {
   background-color: #052665;
