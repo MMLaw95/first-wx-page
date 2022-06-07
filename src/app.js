@@ -37,10 +37,11 @@ function displayForecast() {
 
   let days = ["Tue", "Wed", "Thu"];
 
-  let forecastHTML = `<div class="row justify-content-end">`;  
-  days.foreEach(function (day) {    
-
-  forecastHTML = forecastHTML + `
+  let forecastHTML = `<div class="row justify-content-end">`;
+  days.foreEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
   
               <div class="col-sm-1" id="group-days">            
                 <div class="weather-forecast-day">
@@ -62,13 +63,12 @@ function displayForecast() {
                   </ul>
               </div>            
             </div>`;
-    });
+  });
 
-    forecastHTML = forecastHTML + `</div>`;
-    forecastHTML.innerHTML = forecastHTML;
-    console.log(forecastHTML);
-  }
-
+  forecastHTML = forecastHTML + `</div>`;
+  forecastHTML.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
 
 function displayWeatherConditions(response) {
   let temperatureElement = document.querySelector("#current-temp");
@@ -237,4 +237,4 @@ clickSanAntonio.addEventListener("click", lookUpSanAntonio);
 
 search("Austin");
 
-displayForecast(),
+displayForecast();
