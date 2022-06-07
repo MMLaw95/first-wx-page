@@ -89,13 +89,13 @@ ul.texas-cities {
 
 #star-city {
   display: block;
-  font-size: 27px;
-  text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff,
-    -1px -1px 0 #fff;
+  font-size: 53px;
   text-align: center;
-  margin-top: 166px;
+  margin-top: -8px;
   margin-left: 263.3px;
   text-transform: capitalize;
+
+  color: white;
 }
 
 a:link {
@@ -184,7 +184,7 @@ ul.current-details {
 }
 
 #group-days {
-  margin-top: 68px;
+  margin-top: 105px;
   position: relative;
   left: -226px;
 }
