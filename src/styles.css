@@ -89,13 +89,14 @@ ul.texas-cities {
 
 #star-city {
   display: block;
-  font-size: 53px;
+  font-size: 43px;
   text-align: center;
   margin-top: -8px;
   margin-left: 263.3px;
   text-transform: capitalize;
-
   color: white;
+  line-height: 18x;
+  line-height: 0.9;
 }
 
 a:link {
