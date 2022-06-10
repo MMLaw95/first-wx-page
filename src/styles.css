@@ -97,6 +97,8 @@ ul.texas-cities {
   color: white;
   line-height: 18x;
   line-height: 0.9;
+  text-shadow: -1px 1px 0 #052665, 1px 1px 0 #052665, 1px -1px 0 #052665,
+    -1px -1px 0 #052665;
 }
 
 a:link {
@@ -140,7 +142,7 @@ ul.current-details {
 
 .weather-temperature .active {
   cursor: default;
-  color: #052665;
+  color: black;
 }
 
 .weather-temperature a {
@@ -217,6 +219,7 @@ ul.current-details {
 
 .highs {
   font-weight: bolder;
+  color: black;
 }
 
 .lows {
