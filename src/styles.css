@@ -150,7 +150,7 @@ ul.current-details {
 }
 
 .weather-temperature a:hover {
-  color: #052665;
+  color: black;
 }
 
 #fahrenheit-link:inactive {
