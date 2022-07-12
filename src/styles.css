@@ -240,3 +240,27 @@ ul.current-details {
 #mailColor {
   color: #b90c2f;
 }
+
+@media (max-width: 1280px) {
+  .city-links {
+    position: relative;
+    left: -89px;
+  }
+  .search-bar {
+    position: relative;
+    left: -89px;
+  }
+
+  .star-city {
+    position: relative;
+    left: -89px;
+  }
+
+  .group-days {
+    left: -174px;
+    margin-top: 109px;
+  }
+  .high-low-week {
+    font-size: 12px;
+  }
+}
