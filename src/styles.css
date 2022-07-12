@@ -226,15 +226,15 @@ ul.current-details {
   opacity: 0.8;
 }
 
+.footer a,
 .footer {
-  position: fixed;
-  margin: 10px;
-  padding: 5px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  padding: 53px;
   text-align: center;
   text-shadow: 1x 2x #fff;
+}
+
+.madeInTexas {
+  margin: -52px;
 }
 
 #mailColor {
@@ -244,16 +244,23 @@ ul.current-details {
 @media (max-width: 1280px) {
   .city-links {
     position: relative;
-    left: -89px;
+    left: -90px;
   }
   .search-bar {
     position: relative;
-    left: -89px;
+    left: -90px;
   }
 
   #star-city {
     position: relative;
-    left: -89px;
+    left: -80px;
+  }
+
+  #current-emoji {
+    margin-top: -92px;
+    margin-left: -81px;
+    position: relative;
+    right: -40px;
   }
 
   #group-days {
