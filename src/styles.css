@@ -251,16 +251,16 @@ ul.current-details {
     left: -89px;
   }
 
-  .star-city {
+  #star-city {
     position: relative;
     left: -89px;
   }
 
-  .group-days {
+  #group-days {
     left: -174px;
     margin-top: 109px;
   }
-  .high-low-week {
+  #high-low-week {
     font-size: 12px;
   }
 }
