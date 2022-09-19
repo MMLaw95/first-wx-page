@@ -86,7 +86,7 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  let apiKey = "a4291214a1e333b12b6de7b256df44ea";
+  let apiKey = "5a331e3747f0048a43103d5739a0a462";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
 }
@@ -120,7 +120,7 @@ function displayWeatherConditions(response) {
 }
 
 function search(city) {
-  let apiKey = "a4291214a1e333b12b6de7b256df44ea";
+  let apiKey = "5a331e3747f0048a43103d5739a0a462";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayWeatherConditions);
 }
@@ -132,7 +132,7 @@ function handleSubmit(event) {
 }
 
 function searchLocation(position) {
-  let apiKey = "a4291214a1e333b12b6de7b256df44ea";
+  let apiKey = "5a331e3747f0048a43103d5739a0a462";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayWeatherConditions);
 }
@@ -183,7 +183,7 @@ clickAustin.addEventListener("click", displayAustin);
 
 function lookUpAustin(event) {
   let city = "Austin";
-  let apiKey = "a4291214a1e333b12b6de7b256df44ea";
+  let apiKey = "5a331e3747f0048a43103d5739a0a462";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayWeatherConditions);
 }
@@ -199,7 +199,7 @@ clickDallas.addEventListener("click", displayDallas);
 
 function lookUpDallas(event) {
   let city = "Dallas";
-  let apiKey = "a4291214a1e333b12b6de7b256df44ea";
+  let apiKey = "5a331e3747f0048a43103d5739a0a462";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayWeatherConditions);
 }
@@ -215,7 +215,7 @@ clickElPaso.addEventListener("click", displayElPaso);
 
 function lookUpElPaso(event) {
   let city = "El Paso";
-  let apiKey = "a4291214a1e333b12b6de7b256df44ea";
+  let apiKey = "5a331e3747f0048a43103d5739a0a462";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayWeatherConditions);
 }
@@ -231,7 +231,7 @@ clickHouston.addEventListener("click", displayHouston);
 
 function lookUpHouston(event) {
   let city = "Houston";
-  let apiKey = "a4291214a1e333b12b6de7b256df44ea";
+  let apiKey = "5a331e3747f0048a43103d5739a0a462";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayWeatherConditions);
 }
@@ -247,7 +247,7 @@ clickSanAntonio.addEventListener("click", displaySanAntonio);
 
 function lookUpSanAntonio(event) {
   let city = "San Antonio";
-  let apiKey = "a4291214a1e333b12b6de7b256df44ea";
+  let apiKey = "5a331e3747f0048a43103d5739a0a462";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayWeatherConditions);
 }
